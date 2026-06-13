@@ -14,6 +14,11 @@ Format :
 
 ---
 
+## [2026-06-13] Prompts de bootstrap Claude (méta, via /prompt-master)
+**Fait :** `/catchup` pour reprendre le contexte. Puis, via `/prompt-master`, production de deux prompts Claude Code réutilisables (livrés en conversation, pas écrits dans le repo) : (1) un template « audit/mise en place de l'échafaudage d'optimisation Claude » sur un projet existant ; (2) un **bootstrap from scratch** qui réplique le pattern Atlas à 3 couches (index Graphify → `memory/` → code brut, + couche `wiki/`, commandes `/catchup`·`/save`·`/wiki`, `.gitignore`/README/`git init`). Tous deux structurés en Template M (état initial/cible, scope lock, checkpoints, conditions d'arrêt, garde anti-sur-ingénierie d'Opus, git/dépendances/symlinks derrière approbation humaine).
+**Décisions :** aucune décision d'archi sur le projet lui-même — session méta (ingénierie de prompt). Pas de fichier projet modifié.
+**En suspens :** le prompt « bootstrap from scratch » codifie le pattern Atlas en réutilisable mais n'existe que dans l'historique de conversation → à persister comme artefact (`docs/`) si on veut le garder. Fils bootstrap inchangés (copy de démo, déploiement, test `/wiki lint`/`query`, push `adf1ffe`).
+
 ## [2026-06-13] Initialisation git du projet
 **Fait :** `/catchup` pour reprendre le contexte, puis `git init -b main`. Complété le `.gitignore` (ajout `.venv/` du virtualenv Python Graphify et `*.tsbuildinfo` des caches TS incrémentaux). Commit initial `19207ca` : 43 fichiers suivis (front-end, `memory/`, `wiki/`, `.claude/`, export Graphify versionné `graph.json`+`GRAPH_REPORT.md`). Vérifié que `node_modules/`, `dist/`, `.venv/` et `graphify-out/cache/` sont bien exclus.
 **Décisions :** repo versionné en git, branche par défaut `main` (voir DECISIONS.md).

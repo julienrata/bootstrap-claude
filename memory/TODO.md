@@ -11,3 +11,4 @@ Fils ouverts en cours. Coche ou retire quand c'est traité.
 - [x] Initialiser git (`main`, `.gitignore` complété, commit initial `19207ca`). Fait le 2026-06-13. Voir DECISIONS.md.
 - [ ] Dé-suivre `graphify-out/.graphify_python` (chemin absolu machine-spécifique) + l'ajouter au `.gitignore`.
 - [ ] Migrer la détection de fraîcheur du wiki des mtime vers `git diff` (lève le blind spot intra-journée — voir LEARNINGS).
+- [ ] Persister (ou non) le prompt « bootstrap from scratch » du pattern Atlas comme artefact réutilisable (`docs/`) — produit en conversation le 2026-06-13, voir JOURNAL.
