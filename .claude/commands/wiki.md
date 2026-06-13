@@ -27,6 +27,8 @@ Détermine la sous-commande à partir de l'argument (`update` par défaut si vid
 
 ## update  (défaut)
 
+> Effort de raisonnement : **élevé** — *think hard*. C'est la sous-commande de synthèse : interconnecter code + `memory/` + graphify sans dupliquer demande du jugement. L'effort se justifie ici.
+
 1. Lis `wiki/index.md` et le frontmatter (`sources:` / `updated:`) de toutes les pages de `wiki/`.
 2. Détecte les sources modifiées : une page est **périmée** si le **mtime** d'un de ses
    fichiers `sources:` est postérieur à son champ `updated:`. Inclus aussi les fichiers
@@ -40,6 +42,8 @@ Détermine la sous-commande à partir de l'argument (`update` par défaut si vid
 
 ## lint  (audit — ne modifie rien, propose)
 
+> Effort de raisonnement : **faible** — défaut, pas de mot-clé. Vérifs surtout mécaniques (wikilinks, frontmatter, orphelins).
+
 Analyse le wiki et sors une **liste de problèmes + questions à creuser**, sans rien réécrire
 avant feu vert de l'utilisateur. Vérifie :
 - pages orphelines (aucun wikilink entrant) ;
@@ -51,6 +55,8 @@ avant feu vert de l'utilisateur. Vérifie :
 Termine en proposant des sources à lire ou des questions à investiguer.
 
 ## query "<question>"
+
+> Effort de raisonnement : **moyen** — *think*. Répondre au « pourquoi » demande du raisonnement, pas un simple lookup. Monte à *think hard* si la question est transversale ou ambiguë.
 
 1. Lis `wiki/index.md` pour repérer les pages pertinentes, puis ouvre-les.
 2. Réponds par une synthèse **avec citations** vers les pages wiki concernées (`[[...]]`).

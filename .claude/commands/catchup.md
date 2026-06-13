@@ -2,6 +2,8 @@
 description: Reprend le contexte de session depuis memory/ et graphify-out/ (remplace le /resume du CLAUDE.md)
 ---
 
+> Effort de raisonnement : **moyen** — *think*. La tâche est cadrée par la procédure mais demande une vraie synthèse de l'état du projet.
+
 Reprends le contexte de travail comme défini dans `CLAUDE.md`. **Ne modifie rien** tant que l'utilisateur n'a pas validé.
 
 1. Lis les **3 dernières entrées** de `memory/JOURNAL.md`.
