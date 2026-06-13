@@ -14,6 +14,11 @@ Format :
 
 ---
 
+## [2026-06-13] Initialisation git du projet
+**Fait :** `/catchup` pour reprendre le contexte, puis `git init -b main`. Complété le `.gitignore` (ajout `.venv/` du virtualenv Python Graphify et `*.tsbuildinfo` des caches TS incrémentaux). Commit initial `19207ca` : 43 fichiers suivis (front-end, `memory/`, `wiki/`, `.claude/`, export Graphify versionné `graph.json`+`GRAPH_REPORT.md`). Vérifié que `node_modules/`, `dist/`, `.venv/` et `graphify-out/cache/` sont bien exclus.
+**Décisions :** repo versionné en git, branche par défaut `main` (voir DECISIONS.md).
+**En suspens :** `graphify-out/.graphify_python` versionné contient un chemin absolu machine-spécifique (à dé-suivre si clonage ailleurs). Rebascule possible de la détection de fraîcheur du wiki sur `git diff` (lève le blind spot mtime intra-journée). Fils bootstrap toujours ouverts : copy de démo « Atlas », déploiement, test `/wiki lint`/`query`.
+
 ## [2026-06-13] Wiki LLM implémenté de bout en bout
 **Fait :** spec écrit (`docs/superpowers/specs/2026-06-13-wiki-llm-design.md`) puis implémentation complète — commande `/wiki` (`.claude/commands/wiki.md`, sous-commandes update/lint/query), amorçage de `wiki/` (12 pages : overview, architecture/{stack,memory-system,graphify,session-loop,wiki}, components/{app,graph-mark}, concepts/{token-economy,three-layer-navigation}, + index/log), symlink `vault/wiki/homepage/` → `../../homepage/wiki`, section « Wiki » ajoutée au `CLAUDE.md`. Premier `/wiki update` : création de la page du wiki lui-même + cross-refs (tous les wikilinks résolvent). Corrigé une divergence repérée par le wiki : `src/App.tsx` affichait `/resume` → remplacé par `/catchup` (typecheck OK), wiki resynchronisé.
 **Décisions :** wiki = couche de synthèse implémentée (voir DECISIONS.md, statut passé à actif).

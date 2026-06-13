@@ -17,6 +17,13 @@ Format :
 
 ---
 
+## [2026-06-13] Projet versionné en git (branche `main`)
+- Statut : actif
+- Contexte : depuis le bootstrap, le projet n'était pas sous git ; l'étape commit de `/save` était systématiquement sautée, et la détection de fraîcheur du wiki reposait sur les mtime (blind spot intra-journée, voir LEARNINGS).
+- Décision : `git init -b main` à la racine `homepage/`. `.gitignore` complété pour exclure `.venv/` (virtualenv Python Graphify) et `*.tsbuildinfo` (caches TS), en plus de `node_modules/`, `dist/`, `graphify-out/cache/`. On VERSIONNE l'export Graphify (`graph.json`, `GRAPH_REPORT.md`) et tout le système mémoire/wiki.
+- Pourquoi : aligne le projet sur la règle « mémoire projet = repo » ; débloque le commit dans `/save` ; ouvre la voie à une détection de fraîcheur du wiki par `git diff` plutôt que par mtime.
+- Conséquences : `/save` commite désormais. Possibilité de migrer la détection du wiki vers git (à décider). Réserve : `graphify-out/.graphify_python` versionné contient un chemin absolu machine-spécifique — à dé-suivre + ignorer si le repo est cloné ailleurs.
+
 ## [2026-06-13] Wiki LLM du projet : couche de synthèse dans le repo + symlink vault
 - Statut : actif (implémenté le 2026-06-13 — commande `/wiki`, 12 pages, symlink, section CLAUDE.md)
 - Contexte : envie d'un wiki maintenu par le LLM (pattern « LLM Wiki / Memex »). Risque d'empiler un 4e système qui doublonne `memory/`, `graphify` et le vault.

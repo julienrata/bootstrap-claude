@@ -8,3 +8,6 @@ Fils ouverts en cours. Coche ou retire quand c'est traité.
 - [ ] Décider du déploiement (Vercel / Netlify / Pages) et le consigner dans DECISIONS.md.
 - [x] **Wiki LLM** : design + spec + implémentation complète (commande `/wiki`, 12 pages, symlink, section CLAUDE.md). Fait le 2026-06-13. Voir DECISIONS.md.
 - [ ] Tester `/wiki lint` et `/wiki query` en conditions réelles.
+- [x] Initialiser git (`main`, `.gitignore` complété, commit initial `19207ca`). Fait le 2026-06-13. Voir DECISIONS.md.
+- [ ] Dé-suivre `graphify-out/.graphify_python` (chemin absolu machine-spécifique) + l'ajouter au `.gitignore`.
+- [ ] Migrer la détection de fraîcheur du wiki des mtime vers `git diff` (lève le blind spot intra-journée — voir LEARNINGS).
