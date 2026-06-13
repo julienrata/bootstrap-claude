@@ -1,0 +1,7 @@
+{
+  "name": "cairn",
+  "description": "Pose le cœur mémoire (CLAUDE.md + memory/ + /catchup + /save) dans n'importe quel projet, pour ne jamais perdre le contexte entre sessions.",
+  "version": "0.1.0",
+  "author": { "name": "julien rata", "email": "julien.rata@protonmail.com" },
+  "keywords": ["memory", "context", "bootstrap", "session", "scaffolding"]
+}

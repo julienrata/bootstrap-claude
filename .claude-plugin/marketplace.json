@@ -1,0 +1,7 @@
+{
+  "name": "cairn-local",
+  "owner": { "name": "julien rata" },
+  "plugins": [
+    { "name": "cairn", "source": ".", "description": "Bootstrap du cœur mémoire Claude Code" }
+  ]
+}
