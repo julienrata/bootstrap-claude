@@ -1,0 +1,2094 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "memory_persistence_flow",
+        "label": "Flux de m\u00e9moire persistante entre sessions",
+        "nodes": [
+          "catchup_command",
+          "save_command",
+          "journal_doc",
+          "decisions_doc",
+          "memory_layer"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "CLAUDE.md"
+      },
+      {
+        "id": "token_economy_mechanisms",
+        "label": "M\u00e9canismes d'\u00e9conomie de tokens",
+        "nodes": [
+          "three_layer_navigation",
+          "knowledge_graph_concept",
+          "memory_layer",
+          "token_economy"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "CLAUDE.md"
+      },
+      {
+        "id": "frontend_render_chain",
+        "label": "Cha\u00eene de rendu front-end",
+        "nodes": [
+          "index_root",
+          "main_main",
+          "app_app",
+          "components_graphmark_graphmark"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "src/main.tsx"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "users_julien_downloads_delivery_homepage_package_json",
+      "community": 0,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "package_name",
+      "community": 0,
+      "norm_label": "name"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "package_private",
+      "community": 0,
+      "norm_label": "private"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "package_version",
+      "community": 0,
+      "norm_label": "version"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "package_type",
+      "community": 0,
+      "norm_label": "type"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "package_scripts",
+      "community": 0,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "package_scripts_dev",
+      "community": 0,
+      "norm_label": "dev"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "package_scripts_build",
+      "community": 0,
+      "norm_label": "build"
+    },
+    {
+      "label": "preview",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "package_scripts_preview",
+      "community": 0,
+      "norm_label": "preview"
+    },
+    {
+      "label": "typecheck",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "package_scripts_typecheck",
+      "community": 0,
+      "norm_label": "typecheck"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "package_dependencies",
+      "community": 0,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "package_dependencies_react",
+      "community": 0,
+      "norm_label": "react"
+    },
+    {
+      "label": "react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "package_dependencies_react_dom",
+      "community": 0,
+      "norm_label": "react-dom"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "package_devdependencies",
+      "community": 0,
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "@types/react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "package_devdependencies_types_react",
+      "community": 0,
+      "norm_label": "@types/react"
+    },
+    {
+      "label": "@types/react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "package_devdependencies_types_react_dom",
+      "community": 0,
+      "norm_label": "@types/react-dom"
+    },
+    {
+      "label": "@vitejs/plugin-react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "package_devdependencies_vitejs_plugin_react",
+      "community": 0,
+      "norm_label": "@vitejs/plugin-react"
+    },
+    {
+      "label": "typescript",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "package_devdependencies_typescript",
+      "community": 0,
+      "norm_label": "typescript"
+    },
+    {
+      "label": "vite",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "package_devdependencies_vite",
+      "community": 0,
+      "norm_label": "vite"
+    },
+    {
+      "label": "setup-graphify.sh",
+      "file_type": "code",
+      "source_file": "scripts/setup-graphify.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "scripts_setup_graphify",
+      "community": 4,
+      "norm_label": "setup-graphify.sh"
+    },
+    {
+      "label": "setup-graphify.sh script",
+      "file_type": "code",
+      "source_file": "scripts/setup-graphify.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "users_julien_work_bootstrap_claude_homepage_scripts_setup_graphify_sh__entry",
+      "community": 4,
+      "norm_label": "setup-graphify.sh script"
+    },
+    {
+      "label": "App.tsx",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_app",
+      "community": 5,
+      "norm_label": "app.tsx"
+    },
+    {
+      "label": "Step",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "src_app_step",
+      "community": 5,
+      "norm_label": "step"
+    },
+    {
+      "label": "STEPS",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "src_app_steps",
+      "community": 5,
+      "norm_label": "steps"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "src_app_app",
+      "community": 5,
+      "norm_label": "app()"
+    },
+    {
+      "label": "GraphMark.tsx",
+      "file_type": "code",
+      "source_file": "src/components/GraphMark.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_graphmark",
+      "community": 4,
+      "norm_label": "graphmark.tsx"
+    },
+    {
+      "label": "Node",
+      "file_type": "code",
+      "source_file": "src/components/GraphMark.tsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "components_graphmark_node",
+      "community": 4,
+      "norm_label": "node"
+    },
+    {
+      "label": "NODES",
+      "file_type": "code",
+      "source_file": "src/components/GraphMark.tsx",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "components_graphmark_nodes",
+      "community": 4,
+      "norm_label": "nodes"
+    },
+    {
+      "label": "EDGES",
+      "file_type": "code",
+      "source_file": "src/components/GraphMark.tsx",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "components_graphmark_edges",
+      "community": 4,
+      "norm_label": "edges"
+    },
+    {
+      "label": "byId()",
+      "file_type": "code",
+      "source_file": "src/components/GraphMark.tsx",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "components_graphmark_byid",
+      "community": 4,
+      "norm_label": "byid()"
+    },
+    {
+      "label": "GraphMark()",
+      "file_type": "code",
+      "source_file": "src/components/GraphMark.tsx",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "components_graphmark_graphmark",
+      "community": 4,
+      "norm_label": "graphmark()"
+    },
+    {
+      "label": "main.tsx",
+      "file_type": "code",
+      "source_file": "src/main.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_main",
+      "community": 5,
+      "norm_label": "main.tsx"
+    },
+    {
+      "label": "tsconfig.app.json",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "users_julien_downloads_delivery_homepage_tsconfig_app_json",
+      "community": 1,
+      "norm_label": "tsconfig.app.json"
+    },
+    {
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "tsconfig_app_compileroptions",
+      "community": 1,
+      "norm_label": "compileroptions"
+    },
+    {
+      "label": "target",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "tsconfig_app_compileroptions_target",
+      "community": 1,
+      "norm_label": "target"
+    },
+    {
+      "label": "useDefineForClassFields",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "tsconfig_app_compileroptions_usedefineforclassfields",
+      "community": 1,
+      "norm_label": "usedefineforclassfields"
+    },
+    {
+      "label": "lib",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "tsconfig_app_compileroptions_lib",
+      "community": 1,
+      "norm_label": "lib"
+    },
+    {
+      "label": "module",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "tsconfig_app_compileroptions_module",
+      "community": 1,
+      "norm_label": "module"
+    },
+    {
+      "label": "skipLibCheck",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "tsconfig_app_compileroptions_skiplibcheck",
+      "community": 1,
+      "norm_label": "skiplibcheck"
+    },
+    {
+      "label": "moduleResolution",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "tsconfig_app_compileroptions_moduleresolution",
+      "community": 1,
+      "norm_label": "moduleresolution"
+    },
+    {
+      "label": "allowImportingTsExtensions",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "tsconfig_app_compileroptions_allowimportingtsextensions",
+      "community": 1,
+      "norm_label": "allowimportingtsextensions"
+    },
+    {
+      "label": "isolatedModules",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "tsconfig_app_compileroptions_isolatedmodules",
+      "community": 1,
+      "norm_label": "isolatedmodules"
+    },
+    {
+      "label": "moduleDetection",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "tsconfig_app_compileroptions_moduledetection",
+      "community": 1,
+      "norm_label": "moduledetection"
+    },
+    {
+      "label": "noEmit",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "tsconfig_app_compileroptions_noemit",
+      "community": 1,
+      "norm_label": "noemit"
+    },
+    {
+      "label": "jsx",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "tsconfig_app_compileroptions_jsx",
+      "community": 1,
+      "norm_label": "jsx"
+    },
+    {
+      "label": "strict",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "tsconfig_app_compileroptions_strict",
+      "community": 1,
+      "norm_label": "strict"
+    },
+    {
+      "label": "noUnusedLocals",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "tsconfig_app_compileroptions_nounusedlocals",
+      "community": 1,
+      "norm_label": "nounusedlocals"
+    },
+    {
+      "label": "noUnusedParameters",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "tsconfig_app_compileroptions_nounusedparameters",
+      "community": 1,
+      "norm_label": "nounusedparameters"
+    },
+    {
+      "label": "noFallthroughCasesInSwitch",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "tsconfig_app_compileroptions_nofallthroughcasesinswitch",
+      "community": 1,
+      "norm_label": "nofallthroughcasesinswitch"
+    },
+    {
+      "label": "include",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "tsconfig_app_include",
+      "community": 1,
+      "norm_label": "include"
+    },
+    {
+      "label": "tsconfig.json",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "users_julien_downloads_delivery_homepage_tsconfig_json",
+      "community": 6,
+      "norm_label": "tsconfig.json"
+    },
+    {
+      "label": "files",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "tsconfig_files",
+      "community": 6,
+      "norm_label": "files"
+    },
+    {
+      "label": "references",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "tsconfig_references",
+      "community": 6,
+      "norm_label": "references"
+    },
+    {
+      "label": "tsconfig.node.json",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "users_julien_downloads_delivery_homepage_tsconfig_node_json",
+      "community": 3,
+      "norm_label": "tsconfig.node.json"
+    },
+    {
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "tsconfig_node_compileroptions",
+      "community": 3,
+      "norm_label": "compileroptions"
+    },
+    {
+      "label": "target",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "tsconfig_node_compileroptions_target",
+      "community": 3,
+      "norm_label": "target"
+    },
+    {
+      "label": "lib",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "tsconfig_node_compileroptions_lib",
+      "community": 3,
+      "norm_label": "lib"
+    },
+    {
+      "label": "module",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "tsconfig_node_compileroptions_module",
+      "community": 3,
+      "norm_label": "module"
+    },
+    {
+      "label": "skipLibCheck",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "tsconfig_node_compileroptions_skiplibcheck",
+      "community": 3,
+      "norm_label": "skiplibcheck"
+    },
+    {
+      "label": "moduleResolution",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "tsconfig_node_compileroptions_moduleresolution",
+      "community": 3,
+      "norm_label": "moduleresolution"
+    },
+    {
+      "label": "allowImportingTsExtensions",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "tsconfig_node_compileroptions_allowimportingtsextensions",
+      "community": 3,
+      "norm_label": "allowimportingtsextensions"
+    },
+    {
+      "label": "isolatedModules",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "tsconfig_node_compileroptions_isolatedmodules",
+      "community": 3,
+      "norm_label": "isolatedmodules"
+    },
+    {
+      "label": "moduleDetection",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "tsconfig_node_compileroptions_moduledetection",
+      "community": 3,
+      "norm_label": "moduledetection"
+    },
+    {
+      "label": "noEmit",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "tsconfig_node_compileroptions_noemit",
+      "community": 3,
+      "norm_label": "noemit"
+    },
+    {
+      "label": "strict",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "tsconfig_node_compileroptions_strict",
+      "community": 3,
+      "norm_label": "strict"
+    },
+    {
+      "label": "noUnusedLocals",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "tsconfig_node_compileroptions_nounusedlocals",
+      "community": 3,
+      "norm_label": "nounusedlocals"
+    },
+    {
+      "label": "noUnusedParameters",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "tsconfig_node_compileroptions_nounusedparameters",
+      "community": 3,
+      "norm_label": "nounusedparameters"
+    },
+    {
+      "label": "include",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "tsconfig_node_include",
+      "community": 3,
+      "norm_label": "include"
+    },
+    {
+      "label": "vite.config.ts",
+      "file_type": "code",
+      "source_file": "vite.config.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "vite_config",
+      "community": 7,
+      "norm_label": "vite.config.ts"
+    },
+    {
+      "label": "App component",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "app_app",
+      "community": 4,
+      "norm_label": "app component"
+    },
+    {
+      "label": "main entry (createRoot render)",
+      "file_type": "code",
+      "source_file": "src/main.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_main",
+      "community": 4,
+      "norm_label": "main entry (createroot render)"
+    },
+    {
+      "label": "index.html root mount point",
+      "file_type": "code",
+      "source_file": "index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "index_root",
+      "community": 4,
+      "norm_label": "index.html root mount point"
+    },
+    {
+      "label": "Vite config",
+      "file_type": "code",
+      "source_file": "vite.config.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "vite_config_default",
+      "community": 2,
+      "norm_label": "vite config"
+    },
+    {
+      "label": "Couche m\u00e9moire (memory/)",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "memory_layer",
+      "community": 2,
+      "norm_label": "couche memoire (memory/)"
+    },
+    {
+      "label": "\u00c9conomie de tokens",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "token_economy",
+      "community": 2,
+      "norm_label": "economie de tokens"
+    },
+    {
+      "label": "R\u00e8gle des 3 couches (Structure/Contexte/Code)",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "three_layer_navigation",
+      "community": 2,
+      "norm_label": "regle des 3 couches (structure/contexte/code)"
+    },
+    {
+      "label": "Knowledge graph (Graphify)",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "knowledge_graph_concept",
+      "community": 4,
+      "norm_label": "knowledge graph (graphify)"
+    },
+    {
+      "label": "Boucle de session (catchup / travailler / save)",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "session_loop",
+      "community": 4,
+      "norm_label": "boucle de session (catchup / travailler / save)"
+    },
+    {
+      "label": "/catchup command",
+      "file_type": "document",
+      "source_file": ".claude/commands/catchup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "catchup_command",
+      "community": 2,
+      "norm_label": "/catchup command"
+    },
+    {
+      "label": "/save command",
+      "file_type": "document",
+      "source_file": ".claude/commands/save.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "save_command",
+      "community": 2,
+      "norm_label": "/save command"
+    },
+    {
+      "label": "DECISIONS.md (registre ADR)",
+      "file_type": "document",
+      "source_file": "memory/DECISIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "decisions_doc",
+      "community": 2,
+      "norm_label": "decisions.md (registre adr)"
+    },
+    {
+      "label": "JOURNAL.md (log de sessions)",
+      "file_type": "document",
+      "source_file": "memory/JOURNAL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "journal_doc",
+      "community": 2,
+      "norm_label": "journal.md (log de sessions)"
+    },
+    {
+      "label": "LEARNINGS.md (pi\u00e8ges)",
+      "file_type": "document",
+      "source_file": "memory/LEARNINGS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "learnings_doc",
+      "community": 2,
+      "norm_label": "learnings.md (pieges)"
+    },
+    {
+      "label": "TODO.md (fils ouverts)",
+      "file_type": "document",
+      "source_file": "memory/TODO.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "todo_doc",
+      "community": 2,
+      "norm_label": "todo.md (fils ouverts)"
+    },
+    {
+      "label": "CLAUDE.md (instructions agent)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_md_instructions",
+      "community": 2,
+      "norm_label": "claude.md (instructions agent)"
+    },
+    {
+      "label": "D\u00e9cision : commandes de session en fichiers, nommage anglais",
+      "file_type": "rationale",
+      "source_file": "memory/DECISIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "decisions_session_commands",
+      "community": 2,
+      "norm_label": "decision : commandes de session en fichiers, nommage anglais"
+    },
+    {
+      "label": "D\u00e9cision : stack Vite + React + TypeScript",
+      "file_type": "rationale",
+      "source_file": "memory/DECISIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "decisions_stack",
+      "community": 2,
+      "norm_label": "decision : stack vite + react + typescript"
+    },
+    {
+      "label": "D\u00e9cision : styles via variables CSS dans un fichier unique",
+      "file_type": "rationale",
+      "source_file": "memory/DECISIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "decisions_css_tokens",
+      "community": 2,
+      "norm_label": "decision : styles via variables css dans un fichier unique"
+    },
+    {
+      "label": "Pi\u00e8ge : une proc\u00e9dure en prose n'est pas une slash command",
+      "file_type": "rationale",
+      "source_file": "memory/LEARNINGS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "learnings_prose_not_command",
+      "community": 2,
+      "norm_label": "piege : une procedure en prose n'est pas une slash command"
+    },
+    {
+      "label": "Pi\u00e8ge : les imports @fichier.md n'\u00e9conomisent pas de tokens",
+      "file_type": "rationale",
+      "source_file": "memory/LEARNINGS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "learnings_at_import_no_savings",
+      "community": 2,
+      "norm_label": "piege : les imports @fichier.md n'economisent pas de tokens"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "users_julien_downloads_delivery_homepage_package_json",
+      "target": "package_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "users_julien_downloads_delivery_homepage_package_json",
+      "target": "package_devdependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "users_julien_downloads_delivery_homepage_package_json",
+      "target": "package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "users_julien_downloads_delivery_homepage_package_json",
+      "target": "package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "users_julien_downloads_delivery_homepage_package_json",
+      "target": "package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "users_julien_downloads_delivery_homepage_package_json",
+      "target": "package_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "users_julien_downloads_delivery_homepage_package_json",
+      "target": "package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_dev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_preview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_typecheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_react_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_typescript",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_vite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_vitejs_plugin_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/setup-graphify.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_setup_graphify",
+      "target": "users_julien_work_bootstrap_claude_homepage_scripts_setup_graphify_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/setup-graphify.sh",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "scripts_setup_graphify",
+      "target": "knowledge_graph_concept"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "scripts/setup-graphify.sh",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "scripts_setup_graphify",
+      "target": "memory_layer"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "components_graphmark",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "src_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "src_app_step",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "src_app_steps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_main",
+      "target": "src_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_main",
+      "target": "src_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/GraphMark.tsx",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "components_graphmark",
+      "target": "components_graphmark_byid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/GraphMark.tsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "components_graphmark",
+      "target": "components_graphmark_edges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/GraphMark.tsx",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "components_graphmark",
+      "target": "components_graphmark_graphmark",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/GraphMark.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "components_graphmark",
+      "target": "components_graphmark_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/GraphMark.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "components_graphmark",
+      "target": "components_graphmark_nodes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/App.tsx",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "app_app",
+      "target": "components_graphmark_graphmark"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/components/GraphMark.tsx",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "components_graphmark_graphmark",
+      "target": "knowledge_graph_concept"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "users_julien_downloads_delivery_homepage_tsconfig_app_json",
+      "target": "tsconfig_app_compileroptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "users_julien_downloads_delivery_homepage_tsconfig_app_json",
+      "target": "tsconfig_app_include",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_allowimportingtsextensions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_isolatedmodules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_lib",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_module",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_moduledetection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_moduleresolution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_noemit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_nofallthroughcasesinswitch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_nounusedlocals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_nounusedparameters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_skiplibcheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_strict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_target",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_usedefineforclassfields",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "users_julien_downloads_delivery_homepage_tsconfig_json",
+      "target": "tsconfig_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "users_julien_downloads_delivery_homepage_tsconfig_json",
+      "target": "tsconfig_references",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "users_julien_downloads_delivery_homepage_tsconfig_node_json",
+      "target": "tsconfig_node_compileroptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "users_julien_downloads_delivery_homepage_tsconfig_node_json",
+      "target": "tsconfig_node_include",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_allowimportingtsextensions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_isolatedmodules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_lib",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_module",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_moduledetection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_moduleresolution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_noemit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_nounusedlocals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_nounusedparameters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_skiplibcheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_strict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_target",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "src/App.tsx",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "app_app",
+      "target": "session_loop"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.tsx",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "main_main",
+      "target": "app_app"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index_root",
+      "target": "main_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "memory/DECISIONS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "decisions_stack",
+      "target": "vite_config_default"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_md_instructions",
+      "target": "memory_layer"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "memory/LEARNINGS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "learnings_at_import_no_savings",
+      "target": "memory_layer"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "memory_layer",
+      "target": "decisions_doc"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "memory_layer",
+      "target": "journal_doc"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "memory_layer",
+      "target": "learnings_doc"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "memory_layer",
+      "target": "todo_doc"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "memory_layer",
+      "target": "token_economy"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory/LEARNINGS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "learnings_at_import_no_savings",
+      "target": "token_economy"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "three_layer_navigation",
+      "target": "token_economy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_md_instructions",
+      "target": "three_layer_navigation"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "three_layer_navigation",
+      "target": "knowledge_graph_concept"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/catchup.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "catchup_command",
+      "target": "knowledge_graph_concept"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "session_loop",
+      "target": "catchup_command"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "session_loop",
+      "target": "save_command"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/catchup.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "catchup_command",
+      "target": "decisions_doc"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/catchup.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "catchup_command",
+      "target": "journal_doc"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/catchup.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "catchup_command",
+      "target": "todo_doc"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_md_instructions",
+      "target": "catchup_command"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory/DECISIONS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "decisions_session_commands",
+      "target": "catchup_command"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_md_instructions",
+      "target": "save_command"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory/DECISIONS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "decisions_session_commands",
+      "target": "save_command"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/save.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "save_command",
+      "target": "decisions_doc"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/save.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "save_command",
+      "target": "journal_doc"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/save.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "save_command",
+      "target": "learnings_doc"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/save.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "save_command",
+      "target": "todo_doc"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory/DECISIONS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "decisions_css_tokens",
+      "target": "decisions_doc"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory/DECISIONS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "decisions_session_commands",
+      "target": "decisions_doc"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory/DECISIONS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "decisions_stack",
+      "target": "decisions_doc"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory/LEARNINGS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "learnings_at_import_no_savings",
+      "target": "learnings_doc"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory/LEARNINGS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "learnings_prose_not_command",
+      "target": "learnings_doc"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "memory/LEARNINGS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "learnings_prose_not_command",
+      "target": "decisions_session_commands"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "memory_persistence_flow",
+      "label": "Flux de m\u00e9moire persistante entre sessions",
+      "nodes": [
+        "catchup_command",
+        "save_command",
+        "journal_doc",
+        "decisions_doc",
+        "memory_layer"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md"
+    },
+    {
+      "id": "token_economy_mechanisms",
+      "label": "M\u00e9canismes d'\u00e9conomie de tokens",
+      "nodes": [
+        "three_layer_navigation",
+        "knowledge_graph_concept",
+        "memory_layer",
+        "token_economy"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "CLAUDE.md"
+    },
+    {
+      "id": "frontend_render_chain",
+      "label": "Cha\u00eene de rendu front-end",
+      "nodes": [
+        "index_root",
+        "main_main",
+        "app_app",
+        "components_graphmark_graphmark"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.tsx"
+    }
+  ]
+}
