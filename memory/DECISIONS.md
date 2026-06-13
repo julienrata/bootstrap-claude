@@ -17,6 +17,13 @@ Format :
 
 ---
 
+## [2026-06-13] Conversion d'Atlas en plugin de bootstrap « cairn »
+- Statut : actif
+- Contexte : Atlas (`homepage/`) était une landing page Vite/React servant de banc d'essai à un échafaudage mémoire/contexte. Un LLM Council (2026-06-13) a jugé l'instrumentation prématurée sur un projet trivial (voir LEARNINGS). On veut rendre le pattern réutilisable et le valider sur de vrais projets.
+- Décision : transformer le repo en **plugin Claude Code `cairn`** (+ marketplace local) qui pose le **cœur mémoire seul** (`CLAUDE.md` + `memory/` + `/catchup` + `/save`) via `/bootstrap`. Front-end React retiré. Graphify et wiki gelés dans `archive/`. Mécanisme : templates statiques + substitution déterministe (`scripts/apply-template.sh`, testé) — approche choisie pour sa reproductibilité (écarte une génération adaptative par l'agent, non déterministe).
+- Pourquoi : suit la reco du council (valider le cœur sur l'usage réel, geler le reste) ; un plugin rend les commandes disponibles dans tous les projets. Alternatives écartées : template à cloner (figé), pack global `~/.claude` (couplé machine), prompt unique à coller (non outillé).
+- Conséquences : rend caduque la décision « stack Vite + React + TypeScript » pour ce repo (Remplace : [2026-06-12] Stack). `memory/` documente désormais le projet-plugin. Prochaine étape de validation : dogfooder `cairn` puis l'utiliser sur un vrai projet non-trivial.
+
 ## [2026-06-13] Projet versionné en git (branche `main`)
 - Statut : actif
 - Contexte : depuis le bootstrap, le projet n'était pas sous git ; l'étape commit de `/save` était systématiquement sautée, et la détection de fraîcheur du wiki reposait sur les mtime (blind spot intra-journée, voir LEARNINGS).

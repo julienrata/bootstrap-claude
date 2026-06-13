@@ -19,7 +19,7 @@ yarn-error.log*
 .DS_Store
 
 # Graphify : on ignore le cache, on VERSIONNE graph.json et GRAPH_REPORT.md
-graphify-out/cache/
+archive/graphify-out/cache/
 
 # Obsidian (si le vault est suivi dans ce repo)
 .obsidian/workspace*
