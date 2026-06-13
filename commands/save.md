@@ -2,7 +2,7 @@
 description: Sauvegarde l'état de session dans memory/ (journal, décisions, learnings, todo)
 ---
 
-Exécute la procédure de sauvegarde de session définie dans `CLAUDE.md`.
+Exécute la procédure de sauvegarde de session.
 
 Utilise la date du jour fournie par le contexte (`currentDate`), au format `AAAA-MM-JJ`.
 
