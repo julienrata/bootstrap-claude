@@ -12,3 +12,4 @@ Fils ouverts en cours. Coche ou retire quand c'est traité.
 - [ ] Dé-suivre `graphify-out/.graphify_python` (chemin absolu machine-spécifique) + l'ajouter au `.gitignore`.
 - [ ] Migrer la détection de fraîcheur du wiki des mtime vers `git diff` (lève le blind spot intra-journée — voir LEARNINGS).
 - [ ] Persister (ou non) le prompt « bootstrap from scratch » du pattern Atlas comme artefact réutilisable (`docs/`) — produit en conversation le 2026-06-13, voir JOURNAL.
+- [ ] Trancher la reco du LLM Council (2026-06-13, `concil/`) : geler l'outillage d'Atlas et valider la couche mémoire (`/catchup`+`/save`+`memory/`) sur un vrai projet non-trivial, métrique d'usage à l'appui, avant toute industrialisation. Voir LEARNINGS (instrumentation prématurée).

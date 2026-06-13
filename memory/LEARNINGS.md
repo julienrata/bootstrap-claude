@@ -14,6 +14,10 @@ Format :
 
 ---
 
+## Instrumenter un projet trop petit pour générer le problème = outil qui se valide tout seul
+- Cause : Atlas (landing page, code qui tient en tête) a été équipé d'un harnais lourd (graphe Graphify + `memory/` 4 catégories + wiki + commandes de session) censé résoudre la perte de contexte. Mais une landing ne sollicite jamais ce problème → le harnais « marche » par absence de friction, pas par résolution d'une douleur. On ne peut donc rien apprendre de réel sur sa valeur (verdict unanime d'un LLM Council, 2026-06-13, voir `concil/`).
+- Solution : valider un système de mémoire/contexte sur un projet assez gros pour avoir besoin de mémoire (multi-mois ou multi-séances), pas sur le banc d'essai où on l'a construit. Règle premier-principe par brique : garder ce qui *réduit* l'entropie à gérer (mémoire, resituation), suspecter ce qui en *ajoute* (orchestration, wiki/graphe sur projet trivial). Mesurer la preuve à l'usage (une ligne/session : « recharge de contexte = gain ou perte de temps ? ») plutôt que de la présumer par construction. Corollaire : le coût de maintenance des couches (synchro code↔wiki↔graphe) est une dette réelle — prévoir un critère pour *retirer* une couche devenue passif.
+
 ## `/wiki update` : le champ `updated:` est au grain du JOUR, pas de l'heure
 - Cause : la détection de péremption compare le mtime des sources au champ `updated:` (AAAA-MM-JJ). Une source éditée le même jour que la dernière resync n'est donc PAS détectée comme périmée par la règle officielle.
 - Solution : ne pas se fier qu'au champ pour les changements intra-journée — comparer aussi au mtime réel du fichier de page, et tenir compte des fichiers édités pendant la session courante. Quand le repo sera sous git, basculer la détection sur `git diff` (plus fin et fiable).
