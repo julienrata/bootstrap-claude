@@ -12,6 +12,14 @@ Grep des dernières entrées : `grep "^## \[" wiki/log.md | head -5`.
 
 ---
 
+## [2026-06-13] update | Scan post-session méta — aucune resynthèse
+`memory/JOURNAL.md` et `memory/TODO.md` édités cette session (session d'ingénierie de
+prompt via `/prompt-master` : deux prompts Claude Code produits, aucun fichier projet
+modifié). Pages citant ces sources revues — `architecture/memory-system` et
+`architecture/session-loop` synthétisent le *système*, inchangé par ces ajouts de
+bookkeeping. Aucun sous-système/composant/concept apparu. Pages non modifiées, `index`
+inchangé.
+
 ## [2026-06-13] update | Divergence /resume résolue à la source
 `src/App.tsx` corrigé (`/resume` → `/catchup`). Resync de `components/app` et
 `architecture/session-loop` : la note de divergence devient une note de cohérence.
