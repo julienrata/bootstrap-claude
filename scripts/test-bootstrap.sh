@@ -32,4 +32,11 @@ if "$APPLY" "$TMP" "mon-projet" "2026-06-13" "Node.js / npm" >/dev/null 2>&1; th
   fail "2e bootstrap aurait dû être refusé (anti-écrasement)"
 fi
 
+# 6. Caractères spéciaux sed (`&`, `|`, `\`) dans la stack : remplacement littéral
+TMP2="$(mktemp -d)"
+trap 'rm -rf "$TMP" "$TMP2"' EXIT
+TRICKY='C & C++ | path\to'
+"$APPLY" "$TMP2" "proj" "2026-06-13" "$TRICKY" >/dev/null
+grep -qF "$TRICKY" "$TMP2/CLAUDE.md" || fail "stack avec caractères spéciaux mal substituée"
+
 echo "PASS: test-bootstrap OK"

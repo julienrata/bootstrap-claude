@@ -20,10 +20,24 @@ fi
 
 mkdir -p "$TARGET/memory"
 
+# Échappe les caractères spéciaux du *remplacement* sed : `\`, `&` et le
+# délimiteur `|`. Sans ça, une stack comme « C & C++ » corromprait la sortie.
+esc() {
+  local s=$1
+  s=${s//\\/\\\\}   # \ -> \\  (en premier, sinon on ré-échapperait)
+  s=${s//&/\\&}     # & -> \&
+  s=${s//|/\\|}     # | -> \|
+  printf '%s' "$s"
+}
+
+PROJECT_NAME_E=$(esc "$PROJECT_NAME")
+DATE_E=$(esc "$DATE")
+STACK_E=$(esc "$STACK")
+
 subst() {
-  sed -e "s|{{PROJECT_NAME}}|$PROJECT_NAME|g" \
-      -e "s|{{DATE}}|$DATE|g" \
-      -e "s|{{STACK}}|$STACK|g"
+  sed -e "s|{{PROJECT_NAME}}|$PROJECT_NAME_E|g" \
+      -e "s|{{DATE}}|$DATE_E|g" \
+      -e "s|{{STACK}}|$STACK_E|g"
 }
 
 subst < "$TEMPLATES/CLAUDE.md" > "$TARGET/CLAUDE.md"
