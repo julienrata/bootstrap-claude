@@ -14,6 +14,10 @@ Format :
 
 ---
 
+## Déplacer un dossier sous `archive/` casse silencieusement sa règle `.gitignore`
+- Cause : `.gitignore` ignorait `graphify-out/cache/`. Après `git mv graphify-out archive/graphify-out`, le chemin réel devient `archive/graphify-out/cache/` — la règle ne matche plus, et le cache (jusque-là non suivi) est devenu suivi et committé par erreur au `git add -A`.
+- Solution : quand on déplace un dossier qui a des règles d'ignore, mettre à jour les chemins du `.gitignore` dans le même mouvement. Réparation : `git rm -r --cached archive/graphify-out/cache/` (dé-suit sans effacer le disque) + corriger la règle. Réflexe : après un `git mv` de gros dossier, vérifier `git status` pour des fichiers nouvellement suivis qu'on ne voulait pas.
+
 ## Instrumenter un projet trop petit pour générer le problème = outil qui se valide tout seul
 - Cause : Atlas (landing page, code qui tient en tête) a été équipé d'un harnais lourd (graphe Graphify + `memory/` 4 catégories + wiki + commandes de session) censé résoudre la perte de contexte. Mais une landing ne sollicite jamais ce problème → le harnais « marche » par absence de friction, pas par résolution d'une douleur. On ne peut donc rien apprendre de réel sur sa valeur (verdict unanime d'un LLM Council, 2026-06-13, voir `concil/`).
 - Solution : valider un système de mémoire/contexte sur un projet assez gros pour avoir besoin de mémoire (multi-mois ou multi-séances), pas sur le banc d'essai où on l'a construit. Règle premier-principe par brique : garder ce qui *réduit* l'entropie à gérer (mémoire, resituation), suspecter ce qui en *ajoute* (orchestration, wiki/graphe sur projet trivial). Mesurer la preuve à l'usage (une ligne/session : « recharge de contexte = gain ou perte de temps ? ») plutôt que de la présumer par construction. Corollaire : le coût de maintenance des couches (synchro code↔wiki↔graphe) est une dette réelle — prévoir un critère pour *retirer* une couche devenue passif.
